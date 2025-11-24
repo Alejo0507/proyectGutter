@@ -51,6 +51,7 @@ height:calc(100vh - 50px);
     overflow-y: auto;
     padding: 20px;
     background-color: white;
+    border: 10px solid white;
     padding-top: 0%;
     margin-top: 10px;
     margin-right: 10px;
@@ -470,7 +471,9 @@ footer {
     text-align: left;
 }
 .card-img-top {
+    position: absolute;
    height: 200px;
+   transition: all 0.3s ease-in-out;
    width: 200px;
 }
 .noti-panel p {
@@ -485,6 +488,7 @@ footer {
     margin: 8px 0;
 }
 .cardfriend {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -494,7 +498,20 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 20px;
+    height: 13rem;
+    
 }
+.cardfriend:hover {
+    .card-img-top {
+        opacity: 0;
+    }
+    .card-body {
+        opacity: 1;
+    }
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 .cartas {
     display: flex;
     flex-wrap: wrap;
@@ -538,8 +555,15 @@ footer {
   background: transparent;
 }
 
+.card-body {
+
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
 .card-body h3 {
   margin: 0 0 6px 0;
+  
 }
 .card-body .desc {
   margin: 0 0 8px 0;
