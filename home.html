@@ -49,11 +49,11 @@
     <button class="botonesprincipales" onclick="showSection('debt')"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M444-200h70v-50q50-9 86-39t36-89q0-42-24-77t-96-61q-60-20-83-35t-23-41q0-26 18.5-41t53.5-15q32 0 50 15.5t26 38.5l64-26q-11-35-40.5-61T516-710v-50h-70v50q-50 11-78 44t-28 74q0 47 27.5 76t86.5 50q63 23 87.5 41t24.5 47q0 33-23.5 48.5T486-314q-33 0-58.5-20.5T390-396l-66 26q14 48 43.5 77.5T444-252v52Zm36 120q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>Debt</button>
 </div>
 <div class="div2">
-    <button class="botonesderecha" >perfil</button>
-    <button class="botonesderecha" >configuration</button>
-    <button class="botonesderecha" >information</button>
-    <button class="botonesderecha" >laws and regulations</button>
-    <button class="botonesderecha" >help</button>
+    <a class="botonesderecha" href="perfil.html">perfil</a>
+        <button class="botonesderecha" data-modal="config">configuration</button>
+    <button class="botonesderecha" data-modal="info">information</button>
+    <button class="botonesderecha" data-modal="laws">laws and regulations</button>
+    <button class="botonesderecha" data-modal="help">help</button>
     <a id="especialexit"  class="botonesderecha" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg></a>
 </div>
 <div class="div3">
@@ -85,10 +85,10 @@
         </div>
     </div>
     <div class="student">
-        <img class="imgfriends" src="img/chica-adolescente-afroamericana-negra-camiseta-rayas-icono-cara-avatar-redondo-estilo-plano_768258-2.png" alt="">
+        <img class="imgfriends" src="img/black-african-american-boy-round-avatar-face-icon-flat-style_768258-2094.png" alt="">
         <div class="chatext">
-            <p style="font-weight: bold; margin-bottom: 5px;">Josephine</p>
-            <p style="color: rgb(61, 61, 61);">You get tired. But you keep going.</p>
+            <p style="font-weight: bold; margin-bottom: 5px;">Duncan</p>
+            <p style="color: rgb(61, 61, 61);">If you don't continue, that child has no one.</p>
         </div>
     </div>
     <div class="student">
@@ -168,63 +168,95 @@
         </div>
     </div>
     <div id="friends" class="section">
-        <h2>Friends</h2>
-        <p>Aquí aparecen tus amigos.</p>
+        <h2 style="color: green;" >Friends</h2>
+        <p>Find some friends at the Academy</p>
+        <p class="settings-section"><strong>Note:</strong> Those with Red Coat are showed in Red </p>
         <div class="cartas">
 
 <div class="cardfriend" style="width: 13rem;">
             <img class="card-img-top" src="img/chica-adolescente-afroamericana-negra-camiseta-rayas-icono-cara-avatar-redondo-estilo-plano_768258-2.png" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <h3 class="card-title">Mia Crane</h3>
+                <p  class="card-text"><strong>Age:</strong> 17
+                    <br>
+                    <strong>Work Assignment:</strong> Waste Sorting / Corridor Cleanup
+                    <br>
+                    <strong>Debt:</strong> $340,000.95</p>
+                    
                 <button href="#" class="btn-primary">Review</button>
             </div>
         </div>
         <div class="cardfriend" style="width: 13rem;">
             <img class="card-img-top" src="img/black-african-american-boy-round-avatar-face-icon-flat-style_768258-2094.png" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <h3 class="card-title">Marcus Hale</h3>
+                <p  class="card-text"><strong>Age:</strong> 18
+                    <br>
+                    <strong>Work Assignment:</strong> Maintenance Assistant (Lower Levels)
+                    <br>
+                    <strong>Debt:</strong> $340,000.95</p>
                 <button href="#" class="btn-primary">Review</button>
             </div>
         </div>
         <div class="cardfriend" style="width: 13rem;">
             <img class="card-img-top" src="img/chica-adolescente-afroamericana-negra-camiseta-rayas-icono-cara-avatar-redondo-estilo-plano_768258-2.png" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <h3 class="card-title">Nyla Korr</h3>
+                <p  class="card-text"><strong>Age:</strong> 16
+                    <br>
+                    <strong>Work Assignment:</strong> Food Distribution Line
+                    <br>
+                    <strong>Debt:</strong> $500,000.45</p>
                 <button href="#" class="btn-primary">Review</button>
             </div>
         </div>
         <div class="cardfriend" style="width: 13rem;">
             <img class="card-img-top" src="img/black-african-american-boy-round-avatar-face-icon-flat-style_768258-2094.png" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <h3 class="card-title">Jonas Ritt</h3>
+                <p  class="card-text"><strong>Age:</strong> 19
+                    <br>
+                    <strong>Work Assignment:</strong>Surveillance Runner
+                    <br>
+                    <strong>Debt:</strong> $470,000.65</p>
+                    
                 <button href="#" class="btn-primary">Review</button>
             </div>
         </div>
         <div class="cardfriend" style="width: 13rem;">
             <img class="card-img-top" src="img/chica-adolescente-afroamericana-negra-camiseta-rayas-icono-cara-avatar-redondo-estilo-plano_768258-2.png" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                 <h3 class="card-title">Aerin Vox</h3>
+                <p  class="card-text"><strong>Age:</strong> 17
+                    <br>
+                    <strong>Work Assignment:</strong> Laundry & Uniform Control
+                    <br>
+                    <strong>Debt:</strong> $200,650.25</p>
                 <button href="#" class="btn-primary">Review</button>
             </div>
         </div>
         <div class="cardfriend" style="width: 13rem ;">
             <img class="card-img-top" src="img/black-african-american-boy-round-avatar-face-icon-flat-style_768258-2094.png" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <h3 class="card-title">Lio Mercer</h3>
+                <p  class="card-text"><strong>Age:</strong> 18
+                    <br>
+                    <strong>Work Assignment:</strong> Power Grid Support
+                    <br>
+                    <strong>Debt:</strong> $300,155.95</p>
+                   
                 <button href="#" class="btn-primary">Review</button>
-            </div>
+             </div>
         </div>
         <div class="cardfriend" style="width: 13rem;">
             <img class="card-img-top" src="img/chica-adolescente-afroamericana-negra-camiseta-rayas-icono-cara-avatar-redondo-estilo-plano_768258-2.png" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <h3 class="card-title">Kaily Mercer</h3>
+                <p  class="card-text"><strong>Age:</strong> 16
+                    <br>
+                    <strong>Work Assignment:</strong> Laundry & Uniform Control
+                    <br>
+                    <strong>Debt:</strong> $100,050.25</p>
                 <button href="#" class="btn-primary">Review</button>
             </div>
         </div>
@@ -233,7 +265,7 @@
     </div>
 
     <div id="class" class="section">
-        <h2>Class</h2>
+        <h2 style="color: green;">Class</h2>
         <p>Tu clase actual y asignaciones.</p>
         <div id="clasesContainer">
            
@@ -241,7 +273,7 @@
     </div>
 
     <div id="groups" class="section">
-        <h2>Work</h2>
+        <h2 style="color: green;">Work</h2>
         <p>Daily Work and Job tasks.</p>
         <div id="workContainer">
            
@@ -249,8 +281,7 @@
     </div>
 
     <div id="events" class="section">
-        <h2>Events</h2>
-        <p>Eventos del sistema.</p>
+
         <div id="eventsContainer">
 
             <div class="meeting-card">
@@ -299,50 +330,50 @@
     <div class="student">
  <img id="eventsss" class="imgfriends" src="img/780575.png" alt="">
          <div class="chatext">
-            <p style="font-weight: bold; margin-bottom: 5px;">2025/11/10</p>
-            <p style="color: rgb(61, 61, 61);">You get tired. But you keep going.</p>
+            <p style="font-weight: bold; margin-bottom: 5px;">2152-01-08</p>
+            <p style="color: rgb(61, 61, 61);">Intake Day: Arrival of New Students.</p>
         </div>
     </div>
     <div class="student">
         <img id="eventsss" class="imgfriends" src="img/780575.png" alt="">
         <div class="chatext">
-            <p style="font-weight: bold; margin-bottom: 5px;">2025/11/10</p>
-            <p style="color: rgb(61, 61, 61);">You get tired. But you keep going.</p>
+            <p style="font-weight: bold; margin-bottom: 5px;">2152-01-15</p>
+            <p style="color: rgb(61, 61, 61);">Debt Evaluation Update.</p>
         </div>
     </div>
     <div class="student">
          <img id="eventsss" class="imgfriends" src="img/780575.png" alt="">
           <div class="chatext">
-            <p style="font-weight: bold; margin-bottom: 5px;">2025/11/10</p>
-            <p style="color: rgb(61, 61, 61);">You get tired. But you keep going.</p>
+            <p style="font-weight: bold; margin-bottom: 5px;">2152-02-03</p>
+            <p style="color: rgb(61, 61, 61);">Behavioral Observation Logged.</p>
         </div>
     </div>
     <div class="student">
     <img id="eventsss" class="imgfriends" src="img/780575.png" alt=""> 
         <div class="chatext">
-            <p style="font-weight: bold; margin-bottom: 5px;">2025/11/10</p>
-            <p style="color: rgb(61, 61, 61);">You get tired. But you keep going.</p>
+            <p style="font-weight: bold; margin-bottom: 5px;">2152-03-18</p>
+            <p style="color: rgb(61, 61, 61);">Housing Level Reassignment.</p>
         </div>
     </div>
     <div class="student">
         <img id="eventsss" class="imgfriends" src="img/780575.png" alt="">
         <div class="chatext">
-            <p style="font-weight: bold; margin-bottom: 5px;">2025/11/10</p>
-            <p style="color: rgb(61, 61, 61);">You get tired. But you keep going.</p>
+            <p style="font-weight: bold; margin-bottom: 5px;">2152-08-30</p>
+            <p style="color: rgb(61, 61, 61);">Silent Inspection.</p>
         </div>
     </div>
     <div class="student">
          <img id="eventsss" class="imgfriends" src="img/780575.png" alt="">
          <div class="chatext">
-            <p style="font-weight: bold; margin-bottom: 5px;">2025/11/10</p>
-            <p style="color: rgb(61, 61, 61);">You get tired. But you keep going.</p>
+            <p style="font-weight: bold; margin-bottom: 5px;">2152-10-10</p>
+            <p style="color: rgb(61, 61, 61);">Public Notice of Non-Compliance.</p>
         </div>
     </div>
     <div class="student">
         <img id="eventsss" class="imgfriends" src="img/780575.png" alt="">
         <div class="chatext">
-            <p style="font-weight: bold; margin-bottom: 5px;">2025/11/10</p>
-            <p style="color: rgb(61, 61, 61);">You get tired. But you keep going.</p>
+            <p style="font-weight: bold; margin-bottom: 5px;">2152-11-28</p>
+            <p style="color: rgb(61, 61, 61);">Communication Access Limited.</p>
         </div>
     </div>
 </div>
@@ -353,11 +384,103 @@
         <!-- From Uiverse.io by juyi_2230 --> 
 
     <div id="debt" class="section">
-        <h2>Debt</h2>
-        <p>Información de tu deuda.</p>
+        <h2 style="color: green;">Debt</h2>
+        <p>Debt Progres.</p>
+        
+        <div class="porcentes">
+
+            <div class="debtprogress">
+                <div class="progresss" style="--percent: 40%"><strong>40%</strong>
+                </div>
+                <p><strong>Debt:</strong> $500.000</p>
+            </div>
+            <div class="tarjetas-progreso">
+                <div class="tarjeta">
+                    <img src="img/4334696.png" alt="">
+                    <div class="tarjeta-contenido">
+                        <h3>Curret debt</h3>
+                        <p>
+This is your current debt and the percentage of your balance paid so far.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <div class="porcentes">
+
+            <div class="debtprogress">
+                <div class="progresss" style="--percent: 50%"><strong>50%</strong>
+                </div>
+                <p><strong>Daily quote:</strong>$30</p>
+            </div>
+            <div class="tarjetas-progreso">
+                <div class="tarjeta">
+                    <img src="img/14991808.png" alt="">
+                    <div class="tarjeta-contenido">
+                        <h3>Quote</h3>
+                        <p>This amount is the quota you must meet daily.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="porcentes">
+
+            <div class="debtprogress">
+                <div class="progresss" style="--percent: 10%"><strong>10%</strong>
+                </div>
+                <p><strong>Hours Worked:</strong> 578</p>
+            </div>
+            <div class="tarjetas-progreso">
+                <div class="tarjeta">
+                    <img src="img/7025912.png" alt="">
+                    <div class="tarjeta-contenido">
+                        <h3>Total hours worked</h3>
+                        <p>This amount is based on the current semester.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="porcentes">
+
+            <div class="debtprogress">
+                <div class="progresss" style="--percent: 90%"><strong>90%</strong>
+                </div>
+                <p><strong>Daily Taxes:</strong> $10.25</p>
+            </div>
+            <div class="tarjetas-progreso">
+                <div class="tarjeta">
+                    <img src="img/9875148.png" alt="">
+                    <div class="tarjeta-contenido">
+                        <h3>Taxes</h3>
+                        <p>90% of these taxes are added to your debit every day.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </div>
 </div>
 </div>
+<!-- Ventana emergente reutilizable -->
+<div id="overlay" class="overlay">
+    <div id="modal" class="modal modal--small">
+        <div class="modal-header">
+            <h2 id="modal-title">Título</h2>
+            <button class="close-modal">&times;</button>
+        </div>
+        <hr>
+        <div id="modal-body" class="modal-body">
+            <!-- contenido dinámico -->
+        </div>
+        <div class="modal-footer">
+          <p>Be careful with your actions!</p>  
+        </div>
+    </div>
+</div>
+
 <script src="script.js"></script>
 </body>
