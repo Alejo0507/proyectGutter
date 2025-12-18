@@ -512,6 +512,7 @@ margin-bottom: 20px;
 }
 .tarjeta-contenido{
   margin-left: 20px;
+
 }
 .tarjeta{
   display: flex;
@@ -520,6 +521,7 @@ margin-bottom: 20px;
 }
 .tarjetas-progreso{
   border-radius: 10px;
+      background-color: #f4f5f5;
 }
 .debtprogress{
   display: flex;
