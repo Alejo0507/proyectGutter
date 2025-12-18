@@ -503,12 +503,21 @@ footer {
     
 }
 .porcentes{
-  padding-left: 20px;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-left: 1px;
 display: flex;
 justify-content: center;
 margin-bottom: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+background-color: rgb(247, 247, 247);
 
 
+}
+.porcentes:hover{
+  border: green solid 1px;
+  padding-top:19px ;
+  padding-left: 0px;
 }
 .tarjeta-contenido{
   margin-left: 20px;
@@ -518,11 +527,9 @@ margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
-.tarjetas-progreso{
-  border-radius: 10px;
-      background-color: #f4f5f5;
-}
+
 .debtprogress{
   display: flex;
   flex-direction: column;
@@ -1149,7 +1156,7 @@ background-color: #ffffff;
   width: 50%;
   
   padding: 10px 15px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
 
 }
 
